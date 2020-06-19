@@ -1,5 +1,33 @@
-.App {
-  text-align: center;
+body {
+  background-color:  #161512;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.Footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 300px;
+}
+
+.Nav{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  height: 70px;
+}
+
+.field {
+  justify-self: center;
+  align-self: center;
+}
+
+.field-wrapper {
+  width: 0;
 }
 
 .App-logo {

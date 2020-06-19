@@ -1,0 +1,85 @@
+$grid-size: 12.5%;
+
+.field {
+    display: grid;
+    grid-template-columns: 97% auto;
+    grid-template-rows: 97% auto;
+}
+
+.board {
+    display: inline-grid;
+    grid-template-columns: repeat(8, $grid-size);
+    grid-template-rows: repeat(8, $grid-size);
+
+    background-size: cover;
+    background-color: #f0d9b5;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    resize: horizontal;
+}
+
+.piece {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+
+    * {
+        width: 100%;
+        height: 100%;
+        
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.notation {
+    color: rgba($color: #c0c0c0, $alpha: 1.0);
+    position: relative;
+    font-weight: bold;
+
+    * {
+        align-self: center;
+    }
+}
+
+.circle {
+    :hover{
+        background: rgb(174,178,135);
+        background: radial-gradient(circle, rgba(174,178,135,1) 0%, rgba(174,178,135,1) 30%, rgba(9,9,121,0) 60%);
+    }
+}
+
+.vertical-notation {
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(8, auto);
+}
+
+.horizontal-notation {
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(1, auto);
+    align-items: start;
+}
+
+.resize {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    right: 30px;
+    bottom: 0;
+    z-index: 5;
+    cursor: se-resize;
+
+    img {
+        vertical-align: middle;
+        height: 60%;
+        width: 60%;
+    }
+}
