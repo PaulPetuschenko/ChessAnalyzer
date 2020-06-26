@@ -12,6 +12,9 @@ import whiteKnight from '../svg/pieces/wKnight.svg'
 import whiteQueen from '../svg/pieces/wQueen.svg'
 import whiteRock from '../svg/pieces/wRock.svg'
 import whitePawn from '../svg/pieces/wPawn.svg'
+import Chess from 'chess.js'
+
+const chess = new Chess()
 
 var i = 0;
 const notationLetter = Array.from( Array(8),_=>String.fromCharCode(i++),i=97)

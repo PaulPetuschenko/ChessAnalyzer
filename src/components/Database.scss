@@ -1,0 +1,38 @@
+.db-viewer {
+    width: 100%;
+    color: white;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.db-viewer-description{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: .3fr 3fr 3fr 2fr 2fr 1fr;
+    grid-gap: initial;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+        border-left: 1px solid #666;
+    > * {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid #666;
+        border-left: 1px solid #666;
+    }
+}
+
+.db-line {
+    display: grid;
+    grid-template-columns: .3fr 3fr 3fr 2fr 2fr 1fr;
+    grid-gap: initial;
+    > *{
+        text-align: center;
+    }
+}
+
+.db-viewer-content{
+
+}

@@ -7,12 +7,12 @@ export class Comments extends Component {
         return (
             <div className={this.props.className + " Comments"}>
                 <Tabs defaultActiveKey="overview" id="uncontrolled-tab-example">
-                <Tab eventKey="overview" title="Overview">
-                    <Player type="black"></Player>
-                </Tab>
-                <Tab eventKey="settings" title="Settings">
-                    
-                </Tab>
+                    <Tab eventKey="overview" title="Overview">
+                        <Player type="black"></Player>
+                    </Tab>
+                    <Tab eventKey="settings" title="Settings">
+                        
+                    </Tab>
                 
                 </Tabs>
             </div>

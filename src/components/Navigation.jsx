@@ -1,23 +1,19 @@
 import React, { Component } from 'react'
 import { Nav, Navbar, Form, InputGroup, Button } from 'react-bootstrap'
 import './Navigation.scss';
+import { NavLink } from 'react-router-dom'
 
 export class Navigation extends Component {
     render() {
-
-      const navClick = () => {
-
-      }
-
       return (
         <Navbar bg="dark" expand="lg" variant="dark" className="Navigation">
           <Navbar.Brand>ChessAnalysis</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link active onClick={navClick}>Board</Nav.Link>
-              <Nav.Link onClick={navClick}>Database</Nav.Link>
-              <Nav.Link onClick={navClick}>Info</Nav.Link>
+              <Nav.Link><NavLink to="/">Board</NavLink></Nav.Link>
+              <Nav.Link><NavLink to="/database">Database</NavLink></Nav.Link>
+              <Nav.Link><NavLink to="/info">Info</NavLink></Nav.Link>
             </Nav>
             <Form className="NavForm" inline>
               <Form.File
