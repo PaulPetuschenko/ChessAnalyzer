@@ -4,6 +4,7 @@ $grid-size: 12.5%;
     display: grid;
     grid-template-columns: 97% auto;
     grid-template-rows: 97% auto;
+    margin: 0 auto;
 }
 
 .board {

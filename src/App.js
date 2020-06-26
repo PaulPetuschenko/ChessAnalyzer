@@ -1,18 +1,42 @@
 import React from 'react';
 import './App.scss';
-import { Field } from './Compnent/Field';
+import { Navigation } from './components/Navigation'
+import { Field } from './components/Field';
+import { Comments } from './components/Comments'
+import { PGNViewer } from './components/PGNViewer'
 
 
-function App() {
-  return (
-    <div className="App">
-      <div className="Nav"></div>
-      <div></div>
-      <Field className="field-wrapper" />
-      <div></div>
-      <div className="Footer"></div>
-    </div>
-  );
+
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       component: (
+        <div>
+          <Comments />
+          <Field />
+          <PGNViewer />
+        </div>
+      ),
+    }
+  }
+  
+
+  render() {
+
+    
+    
+    return (
+      <div className="App">
+        <Navigation className="Navigation" />
+        <div className="content">  
+          {this.state.component}
+        </div>
+        
+        
+     </div>
+    )
+  }
 }
-
-export default App;

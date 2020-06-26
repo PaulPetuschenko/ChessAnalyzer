@@ -1,24 +1,48 @@
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss';
+
 body {
-  background-color:  #161512;
+  background-color: #161512;
 }
 
 .App{
   display: grid;
-  grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
 }
+
+.Navigation{
+  height: 70px;
+}
+
+.content {
+  width: 1400px;
+  margin: 0 auto;
+
+  > * {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    @media (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+    }
+  }
+
+  @media (max-width: 1400px) {
+    width: auto;
+  }
+  
+}
+
 
 .Footer {
-  grid-column-start: 1;
-  grid-column-end: 4;
   height: 300px;
-}
-
-.Nav{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row: 1;
-  height: 70px;
 }
 
 .field {
