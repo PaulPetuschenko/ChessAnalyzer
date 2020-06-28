@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/rayatarget/rayatarget/_apis/build/status/PaulPetuschenko.ChessAnalyzer?branchName=master)](https://dev.azure.com/rayatarget/rayatarget/_build/latest?definitionId=1&branchName=master)
+https://dev.azure.com/rayatarget/rayatarget/_apis/build/status/PaulPetuschenko.ChessAnalyzer?branchName=master
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
